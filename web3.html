@@ -45,6 +45,34 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+#table1 {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table1 td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#table1 th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#table1 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table2 th{
+  border: 1px solid black;
+}
+#table2 td {
+  border: 1px solid black;
+}
 </style>
 
 <h1 style="text-align:center; color:gray;">Страница 3</h1>
@@ -57,7 +85,7 @@ a:active {
 <br>По умолчанию текст в элементах th выделен полужирным шрифтом и центрирован.
 <br>По умолчанию текст в элементах td обычный и выровнен по левому краю.
 
-<table style="width:100%">
+<table id="table1" style="width:100%">
   <tr>
     <th>Firstname</th>
     <th>th элемент</th>
@@ -73,6 +101,11 @@ a:active {
     <td>Eve</td>
     <td>Jackson</td>
     <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
   </tr>
 </table>
 
@@ -119,4 +152,3 @@ a:active {
 <br>
 </body>
 </html>
-
