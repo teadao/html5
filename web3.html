@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -12,7 +13,36 @@ body
 
 background-color:#eff2f5; 
 border:4px solid #626e7a;
-padding: 10px; margin:10px;}
+padding: 10px; margin:10px;
+}
+
+
+#sp8menu {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+
+}
+
+#sp8menu li  {  
+float: left;  
+}
+
+#sp8menu  a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#sp8menu  a:hover {
+  background-color: #111111;
+}
+
 
 h1   {color: darkblue;
      font-family: verdana;
@@ -110,7 +140,11 @@ a:active {
 #table2 td {
   border: 1px solid black;
 }
+
 </style>
+
+
+
 
 <h1 style="text-align:center; color:gray;">Страница 3</h1>
 <br>
@@ -245,7 +279,28 @@ a:active {
   <dt>Milk</dt>
   <dd>- white cold drink can be fat</dd>
 </dl>
+<div>Списки могут быть вложенными (список внутри списка):</div>
 
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<h2>Примечание. Элемент списка ( li ) может содержать новый список и другие элементы HTML, такие как изображения, ссылки и т. Д.</h2>
+<br><div>Списки HTML можно стилизовать разными способами с помощью CSS.
+<br>Один из популярных способов - стилизовать список по горизонтали, чтобы создать меню навигации.<br>В этом примере мы используем CSS для стилизации списка по горизонтали, чтобы создать меню навигации.</div>
+
+<ul id="sp8menu">
+  <li><a href="https://www.w3schools.com/">Home</a></li>
+  <li><a href="https://therealnews.com/">News</a></li>
+  <li><a href="https://t.me/TravelThai">Contact</a></li>
+  <li><a href="https://teadao.github.io/html5/">About</a></li>
+</ul>
 
 
 
