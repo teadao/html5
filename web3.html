@@ -145,6 +145,16 @@ a:active {
 #table2 td {
   border: 1px solid black;
 }
+.dfg123{
+ background-color: orange;
+  color: white;
+  padding: 10px;
+}
+.dfg321{
+ background-color: gray;
+  color: black;
+  padding: 1px;
+}
 
 </style>
 
@@ -254,7 +264,8 @@ a:active {
 <hr>
 <h2>HTML списки</h2>
 <div>Неупорядоченный список HTML начинается с тега ul. Каждый элемент списка начинается с тега li.
-По умолчанию элементы списка будут отмечены маркерами (маленькими черными кружками). для выбора маркера в неупорядоченном списке элементов  используется свойство CSS list-style-type. Свойство CSS list-style-type может иметь одно из следующих значений
+По умолчанию элементы списка будут отмечены маркерами (маленькими черными кружками). для выбора маркера в неупорядоченном списке элементов
+   используется свойство CSS list-style-type. Свойство CSS list-style-type может иметь одно из следующих значений
 <br>disc Устанавливает маркер элемента списка в виде маркера (по умолчанию).
 <br>circle Устанавливает маркер элемента списка круг.
 <br>square Устанавливает маркер элемента списка в квадрат.
@@ -284,18 +295,14 @@ a:active {
 <div>также HTML поддерживает списки описаний.
 Список описаний - это список терминов с описанием каждого термина.
 Тэг dl определяет список описания, тег dt определяет термин (имя), и тег dd описывает каждый термин</div>
-
-<div style="background-color:gray;color:white;padding:0;">
 <dl>
   <dt>термин</dt>
   <dd>-описание</dd>
   <dt>Milk</dt>
   <dd>- white cold drink can be fat</dd>
-   <dt>предмет</dt>
-   <dd>описание предмета</dd>
 </dl>
-</div>   
 <div>Списки могут быть вложенными (список внутри списка):</div>
+
 <ul>
   <li>Coffee</li>
   <li>Tea
@@ -320,38 +327,43 @@ a:active {
     <li>Элементы списка могут содержать другие элементы HTML</li>
     </ul>
  <li>Используйте свойство CSS float:left or right для отображения списка по горизонтали</li>
-   <li>Используйте тег ol для определения упорядоченного списка.</li>
-   <li>Используйте type атрибут для тега ol, чтобы определить тип нумерации</li>
 </ul>
 
 
-<ul>
-  <li>Описание тегов.</li>
-  <ul>
-<li>Тег ul Определяет неупорядоченный список.</li>
-<li>Тег ol Определяет упорядоченный список.</li>
-<li>Тег li Определяет элемент списка.</li>
-<li>Тег dl Определяет список описаний.</li>
-<li>Тег dt Определяет термин в списке описания.</li>
-<li>Тег dd Описывает термин в списке описаний.</li>
-</ul>
-</ul>
+
+
+
 
 <h2>HTML- блоки и встроенные элементы</h2>
 <p>Элемент уровня блока всегда начинается с новой строки и занимает всю доступную ширину (тянется влево и вправо, насколько это возможно).</p>
 <div>Вот элементы блочного уровня в HTML:<span style="color:darkred">
-address; article; aside; blockquote; canvas; dd; div; dl; dt; fieldset;  figcaption; figure; footer; form; h1; h6; header; hr; li; main; nav;  noscript; ol; p; pre; section; table; tfoot; ul; video;</span>
+address; article; aside; blockquote; canvas; dd; div; dl; dt; fieldset;  figcaption; figure; footer; form; h1; h6; header; hr; li; main; nav;  noscript; ol; 
+   p; pre; section; table; tfoot; ul; video;</span>
 </div>
 
 <p>Встроенный элемент не начинается с новой строки и занимает ровно столько ширины, сколько необходимо.</p>
 <div>Вот встроенные элементы в HTML:<span style="color:darkred">
-a; abbr; acronym; b; bdo; big; br; button; cite; code; dfn; em; i; img; input; kbd; label; map; object; output; q; samp; script; select; small; span; strong; sub; sup; textarea; time; tt; var;</span>
+a; abbr; acronym; b; bdo; big; br; button; cite; code; dfn; em; i; img; input; kbd; label; map; object; output; q; samp; script; select;
+   small; span; strong; sub; sup; textarea; time; tt; var;</span>
 </div>
 
 <div>Элемент span - это <span style="border: 1px solid darkblue"> встроенный контейнер</span>, используемый для разметки части текста или части документа.<br>
 Элемент span не имеет обязательных атрибутов, стиль, класс и идентификатор применяемые к элементу HTML являются общими и применяются ко всем дочерным элементам.<br>
 При использовании вместе с CSS элемент span можно использовать для стилизации частей текста HTML документа.
 </div>
+
+<h2>Использование атрибута Class</h2>
+<div class="dfg123">Атрибут HTML class используется для указания класса для элемента HTML.
+Несколько элементов <span class="dfg321">HTML</span> могут использовать один и тот же имя атрибута класс.
+<br>Атрибут class можно присвоить как блочному так и встроенному элементу HTML.
+</div>
+
+<div class="dfg123 dfg321 ">
+Элементы HTML могут принадлежать более чем к одному классу.
+Чтобы определить несколько классов, разделите имена классов пробелом, например div class="имя1 имя2">. 
+   Элемент будет стилизован в соответствии со всеми указанными классами.
+</div>
+
 
 <ul id="sp8menu">
   <li><a href="https://teadao.github.io/html5/">About</a>
@@ -360,7 +372,7 @@ a; abbr; acronym; b; bdo; big; br; button; cite; code; dfn; em; i; img; input; k
  <li><a href="https://weather.com/">Weather</a></li>
  </li>
 </ul>
-<br>
+
 
 
 
