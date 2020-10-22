@@ -6,6 +6,7 @@
 
 <title>Краткое содержание как работать с кодом HTML5 основанное на курсе от сайта https://www.w3schools.com/</title>
 
+
 <style>
 body
 {
@@ -44,6 +45,8 @@ div {font-family: courier;
 
 
 </style>
+
+
 <h1 style="text-align:center; color:gray;">Страница 4</h1>
 <br>
 
@@ -65,17 +68,74 @@ HTML iframe используется для отображения веб-стр
 
 
 
-<h2>iframe можно использовать в качестве фрейма для открытия ссылки.</h2>
+<h2>iframe можно использовать в качестве целевого фрейма для ссылки.</h2>
 
-<iframe name="iframe_a" height="300px" width="100%"  border="none" title="Iframe Example"></iframe>
+<iframe name="iframe_a" height="300px" width="100%" border="none" title="Iframe Example"></iframe>
 
 <p><a href="https://teadao.github.io/html5/" target="iframe_a">Краткое содержание как работать с кодом HTML5</a></p>
 
-<div>Когда атрибут ссылки target совпадает с именем iframe, ссылка откроется в iframe. Атрибут ссылки target должен ссылаться на атрибут фрейма: name.
-
+<div>Iframe можно использовать в качестве целевого фрейма для ссылки.
+<br>Когда целевой атрибут ссылки совпадает с именем iframe, ссылка откроется в iframe. Атрибут ссылки target должна ссылаться на атрибут фрейма: name.
 </div>
 
 
+
+
+
+<h1>HTML JavaScript</h1>
+<div>JavaScript делает HTML-страницы более динамичными и интерактивными.
+</div>
+
+<div>Тег HTML script используется для определения клиентского сценария (JavaScript).
+
+<br>Элемент script либо содержит утверждения сценария, или он указывает на внешний файл сценария через src атрибут.
+
+<br>Обычно JavaScript используется для обработки изображений, проверки формы и динамического изменения содержимого.
+
+<br>Для выбора элемента HTML в JavaScript чаще всего используется этот метод document.getElementById().</div>
+
+<br>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+
+<p>JavaScript может изменить содержимое HTML-элемента.</p>
+
+<button type="button" onclick="myFunction()">сменить содержимое элемента HTML</button>
+
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "для смены содержимого элемента HTML используем метод document.getElementById (id элемента)";
+}
+</script>
+
+
+<p>Здесь JavaScript изменяет значение атрибута src (исходный адрес) изображения.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('lamp420').src = pic;
+}
+</script>
+
+<img id="lamp420" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
 
 
 
