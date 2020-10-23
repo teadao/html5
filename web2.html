@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Краткое содержание как работать с кодом HTML CSS JavaScript основанное на курсax от сайта https://www.w3schools.com</title>
+
+<style>
+body
+{
+   background-image: url('white123.jpg');
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+
+
+background-color:#eff2f5; 
+border:4px solid #626e7a;
+padding: 10px; margin:10px;
+}
+
+
+#sp8menu {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+
+}
+
+#sp8menu li  {  
+float: right;  
+}
+
+#sp8menu  a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#sp8menu  a:hover {
+  background-color: #111111;
+}
+
+
+#stran420 a{
+     color: black;
+}
+
+
+
+
+h1   {color: darkblue;
+     font-family: verdana;
+     font-size: 120%;}
+p    {color: darkgreen;
+      font-family: courier;
+      font-size: 110%;}
+div {font-family: courier;
+     font-size: 100%;}     
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<h1 style="text-align:center; color:gray;">страница 2</h1>
+<br>
+<title>доп информация о странице которая отображается в адресной строке,закладках и при поиске через поисковые сервисы</title>
+</head>
+<body>
+<hr>
+<h1>HTML изображения</h1>
+<br>
+<div>HTML Тег img используется для вставки изображения на веб-страницу.
+
+Изображения технически не вставляются на веб-страницу; изображения связаны с веб-страницами. <br>img Тег создает удерживающее пространство для ссылочного изображения. img Тег пуст, он содержит только атрибуты и не имеет закрывающего тега.
+<h2 style="color:orange;">img Тег имеет два обязательных атрибута:</h2>
+<h3 style="color:darkblue;">src - указывает путь к изображению</h3>
+<h3 style="color:darkblue;">alt - Задает альтернативный текст для изображения.</h3></div>
+<img src="programming.gif" alt="Computer man" style="width:100px;height:100px;">
+<br>
+<h2 style="color:orange;">Карта изображений</h2>
+
+<div style="color:darkblue;">Тег HTML map и атрибут usemap=#(добовляется для присвоения id каринке) определяет карту изображений. Карта изображений - это изображение с интерактивными областями. Области определяются (выделяются) одним или несколькими тегами area.</div>
+
+<img src="workplace.jpg"  usemap="#workmap" alt="Workplace" style="width:400px;height:379px;">
+
+<div style="color:darkblue;">для добавления интерактивной картинки к тегу img добовляем атрибут #usemap и указываем имя на которое будем ссылаться в теге map после атрибта name </div><br>
+<div style="color:darkgreen;">для добавления интерактивных облостей на картинку, нужно указать форму (shape) интерактивной области и выбрать одно из следующих свойств (значений):
+
+<br>rect - определяет прямоугольную область
+<br>circle - определяет круговую область
+<br>poly - определяет многоугольную область
+<br>default - определяет весь регион
+<br>также надо определить координаты облости выделения и ее размер. значения poly (определяет многоугольную область) </div>
+<br>
+<div>
+Координаты для значения rect приходят парами, одна для оси x, другая для оси y.
+Итак: координаты 34,44 расположены на 34 пикселя от левой стороны и на 44 пикселя сверху и Координаты 270,350 расположены на 270 пикселей от левой стороны и 350 пикселей сверху, теперь у нас достаточно данных, чтобы создать интерактивную прямоугольную область: которая выделяет компьютер.
+</div>
+<div> shape="rekt"</div>
+<div>Чтобы добавить область круга, сначала найдите координаты центра круга, затем укажите радиус круга</div>
+
+
+<map name="workmap">
+ <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.google.com/">
+ <area shape="circle" coords="337, 300, 44" href="https://en.wikipedia.org/wiki/Coffee">
+</map>
+<div>Форма = "poly"
+Он shape="poly"содержит несколько координатных точек, что создает форму, образованную прямыми линиями многоугольник (круассана).Это можно использовать для создания любой формы. Координаты идут парами, одна для оси x, другая для оси y.
+</div>
+<div>нужно найти координаты x и y для всех краев круассана</div>
+<br>
+<img src="frenchfood.jpg" alt="French Food" usemap="#Croissant" width="450" height="675">
+<map name="Croissant">
+  <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="https://en.wikipedia.org/wiki/Croissant">
+</map>
+<br>
+<div>Интерактивная область также может запускать функцию JavaScript.
+Добавьте свойство (значение) clic к тегу area для запуска функции JavaScript. На картинке ниже мы используем атрибут onclick для выполнения функции JavaScript при щелчке по области кофе.</div>
+
+<img src="workplace.jpg"  usemap="#workmap1" alt="Workplace" style="width:400px;height:379px;">
+
+<map name="workmap1">
+  <area shape="circle" coords="337,300,44" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+<br>
+
+
+<div 
+style="background-image: url('fon457.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;">
+
+
+
+
+Можно указать фоновые изображение почти для любого видимого элемента HTML. В этом примере фоновое изображение указывается для элемента div.<br>Чтобы добавить фоновое изображение в элемент HTML, используйте styleатрибут HTML и background-imageсвойство CSS
+<br>также можно указать фоновое изображение теге head через тег style указав нужный HTML элемент с использованием атрбута background-image: url('ссылка на картинку').<br>Если вы хотите, чтобы на всей странице было фоновое изображение, вы должны указать фоновое изображение для <body>элемента.<br>Повтор фона.Если фоновое изображение меньше размера элемента, изображение будет повторяться по горизонтали и вертикали, пока не достигнет конца элемента.<br>
+Чтобы фоновое изображение не повторялось, установите для background-repeatсвойства значение no-repeat.<br>Если вы хотите, чтобы фоновое изображение покрыло весь элемент, то можете установить для свойства background-size значение cover.
+Чтобы убедиться, что весь элемент всегда покрыт, установите для свойства background-attachment значениеfixed.
+Таким образом, фоновое изображение будет покрывать весь элемент без растяжения (изображение сохранит свои исходные пропорции)<br>Если вы хотите, чтобы фоновое изображение растянулось, чтобы соответствовать всему элементу, вы можете установить для background-sizeсвойства значение 100% 100%
+</div>
+<br>
+<h1>HTML Тег picture</h1>
+
+<div>HTML Элемент picture позволяет отображать разные изображения для разных устройств или размеров экрана.
+<br>HTML Элемент picture дает веб-разработчикам больше гибкости при указании ресурсов изображений. 
+Элемент picture содержит один или более элементов source, каждый из которых имеет ссылку на различные изображения через атрибут srcset. Таким образом, браузер может выбрать изображение, которое лучше всего соответствует текущему виду и / или устройству.
+У каждого <source>элемента есть media атрибут, который определяет, когда изображение является наиболее подходящим. 
+<br></div>
+<div style="color:darkred;">Примечание. Всегда указывайте элемент img как последний дочерний элемент picture элемента. Элемент img используется в браузерах, которые не поддерживают элемент picture, или если ни один из source тегов не подходит.</div>
+<br>
+<div>Пропускная способность.
+Если у вас маленький экран или устройство, то нет необходимости загружать большой файл изображения. Браузер будет использовать первый source элемент с совпадающими значениями атрибутов и игнорировать любой из следующих элементов.</div>
+​<picture>
+  <source media="(min-width: 900px)" srcset="pic_trulli.jpg">
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="pic_trulli.jpg" style="width:auto;">
+</picture>
+<br>
+<div>Поддержка формата.
+Некоторые браузеры или устройства могут поддерживать все форматы изображений. Используя picture элемент, вы можете добавить одно или несколко изображений в разных(во всех) форматах, и браузер будет использовать первый формат, который он распознает, и игнорировать любой из следующих элементов.</div>
+<div>
+<h2>Пример</h2>
+   picture
+  <br>source srcset="img_avatar.png"
+  <br>source srcset="img_avatar.jpg"
+  <br>img src="img_avatar" alt="Avatar" style="width:auto;"
+  <br>picture</div>
+<br>
+
+
+<hr>
+<ul id="sp8menu">
+  <li><a href="https://teadao.github.io/html5/">About</a>
+  <li><a href="https://www.w3schools.com/">Home</a></li>
+  <li><a href="https://t.me/TravelThai">Contact</a></li>
+ <li><a href="https://weather.com/">Weather</a></li>
+ </li>
+</ul>
+
+
+
+
+
+
+<hr>
+<div id="stran420" style="text-align:center;">
+<a href="index.html">1</a>
+<a href="web2.html">2</a>
+<a href="web3.html">3</a>
+<a href="web4.html">4</a>
+</div>
+<hr>
+<br>
+</body>
+</html>
