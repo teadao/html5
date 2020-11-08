@@ -2,10 +2,10 @@
 <html lang="en-US; ru-RU" >
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>Краткое содержание как работать с кодом HTML CSS JavaScript основанное на курсax от сайта https://www.w3schools.com</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 
 body
  {background-image: url('white123.jpg');
@@ -88,6 +88,7 @@ a:active {
 }
 
 
+
 </style>
 
 
@@ -95,8 +96,8 @@ a:active {
 <body>
 
 <h1 style="text-align:center; color:gray;">Кратко о главном в HTML5</h1>
-
-
+<section>
+<nav>
 <ul>
     
 <li>навигация</li>
@@ -121,17 +122,17 @@ a:active {
 
 <li><a href="web4.html#javaS420">JavaScript в HTML</a></li>  
 
-<li><a href="web4.html#htmllinks420">ссылки на файлы в HTML</a></li> 
+<li><a href="web4.html#htmllinks420">ссылки на файлы в HTML</a></li>
+
+<li><a href="web4.html#head420">HTML элемент Head</a></li> 
+
+<li><a href="web4.html#base420">HTML Элемент base</a></li> 
 
  </ul>
 </ul>
+</nav>
 
-
-
-
-<a href="#links420" style="background-color:#030335;color:white;padding:15px25px;text-align:center;text-decoration:none;display:block;" >тег "а" определяет появлнение ссылки и атрибут href добавляет её</a>
-
-
+<article>
 
 <h1 id="zaga420">зоголовок-назавание статьи и т.д</h1>
 
@@ -142,7 +143,30 @@ a:active {
 <br>body Элемент определяет тело документа, и представляет собой контейнер для всех видимых содержимого, таких как заголовки, параграфы, изображения, гиперссылки, таблицы, списки и т.д.
 <br>h1 элемент определяет большой заголовок
 <br>p элемент определяет пункт
+
+<br>Элемент HTML определяется начальным тегом, некоторым содержимым и конечным тегом:
+
+<br>&#60 tagname &#62 Здесь идет контент &#60 / tagname &#62
+HTML элемент всегда имеет начальный и конечный тег:
+
+<br>&#60 h1 > заголовок &#60 / h1 &#62
+<br>&#60 p > абзац. &#60 / p &#62
+
 </div>
+
+</article>
+</section>
+
+
+
+
+
+
+
+
+
+
+<a href="#links420" style="background-color:#030335;color:white;padding:15px25px;text-align:center;text-decoration:none;display:block;" >тег "а" определяет появлнение ссылки и атрибут href добавляет её</a>
 
 <p title="читай код" style="color:#f0e68c;">параграф-отцуп-абзац с использованием атрибута TITLE для появления подсказки</p>
 <img src="1236541254.png" style="width:100px; height:100px;" alt="атрибут альт указывает на содержание изображения при отсутствии изображения или при чтении страницы при помощи спец программ;">
@@ -155,15 +179,21 @@ a:active {
 и в нем можно 
 писать "хокку"</pre>
 <h1 style="color:#bdb76b; font-size:10px; font-family:verdana;text-align:center">тут могла быть реклама</h1>
+
 <p style="text-align:center;">для размещения текста используем атрибут text-align:center</p>
+
 <p>текст можно менять с помощью дополнительных тегов <b>жирный</b> <strong>и еще жарный</strong> 
+
 <i>курсив</i> 
+
 <em>и еще курсив</em> <mark>выделеный</mark> <small>мааленький</small> <del>зачеркнутый</del> <ins>подчеркнутый</ins> <sub>подстрочный</sub> <sup>надстрочный</sup> </p>
 
 <p> ниже рассмотрим как выглядят цитаты и какие теги они используют:</p>
+
 <blockquote cite="http://www.worldwildlife.org/who/index.html;" style=background-color:#d88fd8;color:white;padding:15px25px;text-align:center;text-decoration:none;display:inline-block;>
 это просто текст-цитата c тегом BLOCKQUOTE</blockquote>
-<p> для цитаты в ковычках <q>просто добовляем тег q </q>
+
+<p> для цитаты в ковычках <q>просто добовляем</q> тег q </q>
 
 <p>разметка<abbr title="тег ABBR с атрибутом TITLE"> сокращений </abbr> для создания пояснений</p>
 
@@ -261,7 +291,8 @@ q-Определяет короткую встроенную цитату</p>
 <hr>
 <div>Еще бывает внешний CSS. На внешние таблицы стилей можно ссылаться с помощью полного URL-адреса или пути относительно текущей веб-страниц.Такие ссылки указываются в теге head и обозначаются тегом link с атрибутами rel и herf. Примеры приведены ниже:
 <hr>
-<p>(link rel="stylesheet" href="https:// www.w3schools.com / html / styles.css" )</p>
+<p>(link rel="stylesheet" 
+href="https://www.w3schools.com/html/styles.css")</p>
 
 <p>(link rel="stylesheet" href="/html/styles.css")</p>
 
